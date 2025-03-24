@@ -1,0 +1,9 @@
+---
+- name: install httpd
+  become: true
+  become_user: root
+  -name: httpd install
+   yum:
+   service:
+    name: httpd 
+    state: presenet
